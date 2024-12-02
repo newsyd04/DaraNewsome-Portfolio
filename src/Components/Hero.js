@@ -43,7 +43,7 @@ const Hero = () => {
         View My Work
       </a>
       <a
-        href="../images/Dara_Newsome_resume.pdf"
+        href="/Dara_Newsome_resume.pdf"
         className="mt-6 bg-blue-500 text-white py-2 px-6 rounded-full shadow-md hover:bg-blue-600" download
       >
         Download my Resume
