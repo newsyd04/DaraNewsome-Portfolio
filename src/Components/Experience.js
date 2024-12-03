@@ -4,7 +4,7 @@ const Timeline = () => {
   const experiences = [
     {
       title: "Internship at Justice Department",
-      date: "Jan 2024 - May 2024",
+      date: "Jan 2025 - May 2025",
       role: "Software Engineer",
       description: ["Internship beginning in early 2025."],
     },
