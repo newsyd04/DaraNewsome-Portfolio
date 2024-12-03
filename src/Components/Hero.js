@@ -8,6 +8,18 @@ const Hero = () => {
     setIsFlipped(!isFlipped);
   };
 
+  const scrollToAnchor = () => {
+    const target = document.getElementById("experience");
+    if (target) {
+      const targetPosition =
+        target.getBoundingClientRect().top + window.pageYOffset;
+      window.scrollTo({
+        top: targetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <section
       id="home"
@@ -36,12 +48,12 @@ const Hero = () => {
       <p className="text-xl text-gray-600 mt-4">
         Immersive Software Engineering Student
       </p>
-      <a
-        href="#projects"
+      <button
+        onClick={scrollToAnchor}
         className="mt-6 bg-blue-500 text-white py-2 px-6 rounded-full shadow-md hover:bg-blue-600"
       >
         View My Work
-      </a>
+      </button>
       <a
         href="/Dara_Newsome_resume.pdf"
         className="mt-6 bg-blue-500 text-white py-2 px-6 rounded-full shadow-md hover:bg-blue-600" download
