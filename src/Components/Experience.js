@@ -78,7 +78,32 @@ const Timeline = () => {
           Work Experience
         </h2>
         <div className="relative">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 h-full border-l-2 border-gray-300"></div>
+          {/* Up Arrow */}
+          <div className="flex justify-center items-center mb-4">
+            <div className="flex flex-col items-center">
+              <div className="bg-blue-500 w-8 h-8 flex items-center justify-center rounded-full shadow-md">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M5 15l7-7 7 7"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          {/* Vertical Line */}
+          <div className="absolute top-8 left-1/2 -translate-x-1/2 h-full border-l-2 border-gray-300"></div>
+
+          {/* Timeline Items */}
           <div className="space-y-10">
             {experiences.map((exp, index) => (
               <div
@@ -96,12 +121,8 @@ const Timeline = () => {
                   <h3 className="text-2xl font-semibold text-gray-800">
                     {exp.title}
                   </h3>
-                  <p className="text-sm text-gray-500 mt-1">
-                    {exp.role}
-                  </p>
-                  <p className="text-sm text-gray-500 mt-1">
-                    {exp.date}
-                  </p>
+                  <p className="text-sm text-gray-500 mt-1">{exp.role}</p>
+                  <p className="text-sm text-gray-500 mt-1">{exp.date}</p>
                   <ul className="text-gray-700 mt-4 list-disc pl-5">
                     {exp.description.map((point, i) => (
                       <li key={i}>{point}</li>
