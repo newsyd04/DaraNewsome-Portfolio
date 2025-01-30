@@ -3,7 +3,7 @@ import React from "react";
 const Timeline = () => {
   const experiences = [
     {
-      title: "Internship at Justice Department",
+      title: "Internship at Irish Department of Justice",
       date: "Jan 2025 - May 2025",
       role: "Software Engineer",
       description: ["Internship beginning in early 2025."],

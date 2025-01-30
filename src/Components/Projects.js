@@ -12,6 +12,14 @@ const TechTag = ({ name, color, logo }) => (
 
 const Projects = () => {
   const technologies = {
+    Java: {
+      color: "#D3BC8D",
+      logo: "https://img.icons8.com/?size=512&id=13679&format=png",
+    },
+    JavaScript: {
+      color: "#6F263D",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/640px-Unofficial_JavaScript_logo_2.svg.png",
+    },
     React: {
       color: "#20232A",
       logo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
@@ -86,6 +94,13 @@ const Projects = () => {
       description:
         "Motion-sensing device showing ideal heating times based on tracked activity patterns.",
       tech: ["AWS", "Arduino", "Grafana", "3D Printing"],
+      link: "https://newsyd04.github.io/EpicProject",
+    },
+    {
+      title: "Domain Price Comparator",
+      description:
+        "App to search and compare domain prices from different providers eg. Namecheap and Register365",
+      tech: ["React", "JavaScript", "Java", "Tailwind CSS"],
       link: "https://newsyd04.github.io/EpicProject",
     },
   ];
