@@ -86,7 +86,7 @@ const Projects = () => {
       description:
         "Motion-sensing device showing ideal heating times based on tracked activity patterns.",
       tech: ["AWS", "Arduino", "Grafana", "3D Printing"],
-      link: "https://epic-project-5rew35tym-newsyd04s-projects.vercel.app/",
+      link: "https://newsyd04.github.io/EpicProject",
     },
   ];
 
