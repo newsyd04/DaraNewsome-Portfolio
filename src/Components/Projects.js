@@ -87,7 +87,7 @@ const Projects = () => {
       description:
         "Application to help users avoid dangerous areas and find safer routes.",
       tech: ["Python", "SQL", "Figma", "GenAI"],
-      link: "#",
+      link: "https://immersivesoftwareengineering.ie/ise-gen-ai-4-good/",
     },
     {
       title: "Synergia",
@@ -100,8 +100,8 @@ const Projects = () => {
       title: "Domain Price Comparator",
       description:
         "App to search and compare domain prices from different providers eg. Namecheap and Register365",
-      tech: ["React", "JavaScript", "Java", "Tailwind CSS"],
-      link: "https://newsyd04.github.io/EpicProject",
+      tech: ["React", "JavaScript", "Tailwind CSS"],
+      link: "https://github.com/newsyd04/domain-compare-price",
     },
   ];
 
