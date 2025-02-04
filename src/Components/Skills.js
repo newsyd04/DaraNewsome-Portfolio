@@ -30,6 +30,7 @@ const Skills = () => {
         "Flutter",
         "Vercel",
         "Tailwind CSS",
+        "Eleventy",
       ],
     },
     {
