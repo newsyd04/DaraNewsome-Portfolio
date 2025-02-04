@@ -48,13 +48,19 @@ const WebDev = () => {
               key={index}
               className="bg-white p-4 rounded-xl shadow-lg flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
             >
-              <div className="relative w-full rounded-lg overflow-hidden border border-gray-200 shadow-sm mb-4">
+              {/* Clickable Image */}
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative w-full rounded-lg overflow-hidden border border-gray-200 shadow-sm mb-4"
+              >
                 <img
                   src={project.image}
                   alt={`${project.title} Screenshot`}
                   className="w-full h-40 object-cover"
                 />
-              </div>
+              </a>
               <h3 className="text-lg font-semibold text-gray-800 mb-2">
                 {project.title}
               </h3>
