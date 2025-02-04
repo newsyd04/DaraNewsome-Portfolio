@@ -25,7 +25,7 @@ const WebDev = () => {
       description:
         "A website designed to showcase SP Trucking's services and fleet information.",
       image: trucking,
-      link: "https://newsyd04.github.io/EpicProject",
+      link: "https://newsyd04.github.io/sp-trucking-site/",
     },
     {
       title: "Kerry BER Website",
