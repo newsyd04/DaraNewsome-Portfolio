@@ -54,6 +54,11 @@ const NavBar = () => {
               </a>
             </li>
             <li>
+              <a href="#webdev" className="text-gray-600 hover:text-gray-900">
+                Web-Dev
+              </a>
+            </li>
+            <li>
               <a href="#skills" className="text-gray-600 hover:text-gray-900">
                 Skills
               </a>
@@ -94,6 +99,15 @@ const NavBar = () => {
                 onClick={toggleMenu}
               >
                 Projects
+              </a>
+            </li>
+            <li>
+              <a
+                href="#webdev"
+                className="block text-gray-600 hover:text-gray-900 text-center"
+                onClick={toggleMenu}
+              >
+                Web-Dev
               </a>
             </li>
             <li>

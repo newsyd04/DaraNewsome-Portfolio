@@ -3,6 +3,7 @@ import Navbar from "./Components/NavBar";
 import Hero from "./Components/Hero";
 import Projects from "./Components/Projects";
 import Skills from "./Components/Skills";
+import WebDev from "./Components/WebDev";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import Experience from "./Components/Experience";
@@ -14,6 +15,7 @@ function App() {
       <Hero />
       <Experience />
       <Projects />
+      <WebDev />
       <Skills />
       <Contact />
       <Footer />
