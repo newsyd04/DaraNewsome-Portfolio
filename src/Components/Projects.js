@@ -24,6 +24,10 @@ const Projects = () => {
       color: "#20232A",
       logo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
     },
+    "React Leaf":{
+      color: "#663399",
+      logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.tiagofsanchez.com%2Fstatic%2F4ea17284d0f93219dd9797c24bfebaff%2F53f65%2Freact-leaflet.png&f=1&nofb=1&ipt=684aab5fb9ef669a34654396fe0f65e50e9ba649a43c1f698f6d56cca0244f91&ipo=images",
+    },
     "Tailwind CSS": {
       color: "#385ef8",
       logo: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
@@ -107,8 +111,8 @@ const Projects = () => {
       title: "Travel Map Visualiser",
       description:
         "Website to plot and view my previous trips and future travel plans, built using React's Leaflet library",
-      tech: ["React", "Tailwind CSS"],
-      link: "https://github.com/newsyd04/Travel-Map",
+      tech: ["React", "React Leaf", "Tailwind CSS"],
+      link: "https://newsyd04.github.io/Travel-Map",
     },
   ];
 
@@ -116,7 +120,7 @@ const Projects = () => {
     <section id="projects" className="py-20 bg-gray-100">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-4xl font-bold text-gray-800 text-center mb-12">
-          Projects
+          Personal Projects
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {projectList.map((project, index) => (

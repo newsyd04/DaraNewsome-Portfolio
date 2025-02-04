@@ -40,7 +40,7 @@ const WebDev = () => {
     <section id="webdev" className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-4xl font-bold text-gray-800 text-center mb-12">
-          Web Development
+          Commercial Web Development
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {projectList.map((project, index) => (
