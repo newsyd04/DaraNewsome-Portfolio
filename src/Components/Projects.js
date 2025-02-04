@@ -103,6 +103,13 @@ const Projects = () => {
       tech: ["React", "JavaScript", "Tailwind CSS"],
       link: "https://github.com/newsyd04/domain-compare-price",
     },
+    {
+      title: "Travel Map Visualiser",
+      description:
+        "Website to plot and view my previous trips and future travel plans, built using React's Leaflet library",
+      tech: ["React", "Tailwind CSS"],
+      link: "https://github.com/newsyd04/Travel-Map",
+    },
   ];
 
   return (
