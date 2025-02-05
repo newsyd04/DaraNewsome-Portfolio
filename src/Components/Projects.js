@@ -117,7 +117,7 @@ const Projects = () => {
     {
       title: "Pizza Ranker",
       description:
-        "Website to rank and review my favourite Pizza restraunts",
+        "Website to rank and review my favourite Pizza restaurants",
       tech: ["React", "Tailwind CSS", "Figma"],
       link: "https://newsyd04.github.io/pizza-ranker/",
     },
