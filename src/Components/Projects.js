@@ -114,6 +114,13 @@ const Projects = () => {
       tech: ["React", "React Leaf", "Tailwind CSS"],
       link: "https://newsyd04.github.io/Travel-Map",
     },
+    {
+      title: "Pizza Ranker",
+      description:
+        "Website to rank and review my favourite Pizza restraunts",
+      tech: ["React", "Tailwind CSS"],
+      link: "https://newsyd04.github.io/pizza-ranker/",
+    },
   ];
 
   return (
