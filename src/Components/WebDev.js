@@ -32,7 +32,7 @@ const WebDev = () => {
       description:
         "A website for Kerry BER, a certified domestic BER assessor business.",
       image: kerryber,
-      link: "https://ber-site.vercel.app", // Correct full URL for external link
+      link: "https://kerryber.ie",
     },
   ];
 
