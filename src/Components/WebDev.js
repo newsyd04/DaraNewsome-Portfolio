@@ -3,6 +3,7 @@ import ddImage from "../images/dd-screengrab.png";
 import kerryber from "../images/kerryber.png";
 import school from "../images/school-site.png";
 import trucking from "../images/sp-trucking.png";
+import abe from "../images/abe-picture.png";
 
 const WebDev = () => {
   const projectList = [
@@ -33,6 +34,13 @@ const WebDev = () => {
         "A website for Kerry BER, a certified domestic BER assessor business.",
       image: kerryber,
       link: "https://kerryber.ie",
+    },
+    {
+      title: "Local Artist Portfolio Website",
+      description:
+        "A website for a local artist, showcasing pieces and providing contact and lesson details.",
+      image: abe,
+      link: "https://newsyd04.github.io/abes-art-site/",
     },
   ];
 
