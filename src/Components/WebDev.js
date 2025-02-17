@@ -4,6 +4,7 @@ import kerryber from "../images/kerryber.png";
 import school from "../images/school-site.png";
 import trucking from "../images/sp-trucking.png";
 import abe from "../images/abe-picture.png";
+import sof from "../images/sof-pic.png"
 
 const WebDev = () => {
   const projectList = [
@@ -41,6 +42,13 @@ const WebDev = () => {
         "A website for a local artist, showcasing pieces and providing contact and lesson details.",
       image: abe,
       link: "https://newsyd04.github.io/abes-art-site/",
+    },
+    {
+      title: "Local Photographer Portfolio Website",
+      description:
+        "A website for a local photographer, showcasing their favourite pieces and providing contact and sales details.",
+      image: sof,
+      link: "https://newsyd04.github.io/secrets-of-flowers-site",
     },
   ];
 
