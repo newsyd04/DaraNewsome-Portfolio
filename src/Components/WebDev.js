@@ -14,7 +14,7 @@ const WebDev = () => {
       description:
         "Showcasing my work in web development, featuring past projects, design services, and contact details.",
       image: webdev,
-      link: "webdev.daranewso.me",
+      link: "https://www.webdev.daranewso.me",
     },   
     {
       title: "School Website",
