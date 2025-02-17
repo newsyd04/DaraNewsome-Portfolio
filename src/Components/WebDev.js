@@ -5,6 +5,7 @@ import school from "../images/school-site.png";
 import trucking from "../images/sp-trucking.png";
 import abe from "../images/abe-picture.png";
 import sof from "../images/sof-pic.png"
+import webdev from "../images/webdev.png"
 
 const WebDev = () => {
   const projectList = [
@@ -50,6 +51,13 @@ const WebDev = () => {
       image: sof,
       link: "https://newsyd04.github.io/secrets-of-flowers-site",
     },
+    {
+      title: "My Web Development Portfolio",
+      description:
+        "Showcasing my work in web development, featuring past projects, design services, and contact details.",
+      image: webdev,
+      link: "https://www.webdev.daranewso.me",
+    },    
   ];
 
   return (
