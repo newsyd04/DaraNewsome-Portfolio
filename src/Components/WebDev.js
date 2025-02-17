@@ -10,6 +10,13 @@ import webdev from "../images/webdev.png"
 const WebDev = () => {
   const projectList = [
     {
+      title: "My Web Development Portfolio",
+      description:
+        "Showcasing my work in web development, featuring past projects, design services, and contact details.",
+      image: webdev,
+      link: "https://www.webdev.daranewso.me",
+    },   
+    {
       title: "School Website",
       description:
         "Website for a primary school, showcasing events, announcements, and resources.",
@@ -22,6 +29,13 @@ const WebDev = () => {
         "Website designed for Direct Drywall to showcase services and contact info.",
       image: ddImage,
       link: "https://newsyd04.github.io/direct-drywall-site/",
+    },
+    {
+      title: "Local Artist Portfolio Website",
+      description:
+        "A website for a local artist, showcasing pieces and providing contact and lesson details.",
+      image: abe,
+      link: "https://newsyd04.github.io/abes-art-site/",
     },
     {
       title: "SP Trucking Website",
@@ -38,26 +52,12 @@ const WebDev = () => {
       link: "https://kerryber.ie",
     },
     {
-      title: "Local Artist Portfolio Website",
-      description:
-        "A website for a local artist, showcasing pieces and providing contact and lesson details.",
-      image: abe,
-      link: "https://newsyd04.github.io/abes-art-site/",
-    },
-    {
       title: "Local Photographer Portfolio Website",
       description:
         "A website for a local photographer, showcasing their favourite pieces and providing contact and sales details.",
       image: sof,
       link: "https://newsyd04.github.io/secrets-of-flowers-site",
-    },
-    {
-      title: "My Web Development Portfolio",
-      description:
-        "Showcasing my work in web development, featuring past projects, design services, and contact details.",
-      image: webdev,
-      link: "https://www.webdev.daranewso.me",
-    },    
+    }, 
   ];
 
   return (
