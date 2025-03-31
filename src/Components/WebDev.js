@@ -56,7 +56,7 @@ const WebDev = () => {
       description:
         "A website for a local photographer, showcasing their favourite pieces and providing contact and sales details.",
       image: sof,
-      link: "https://newsyd04.github.io/secrets-of-flowers-site",
+      link: "https://www.secrets-of-flowers.daranewso.me/",
     }, 
   ];
 
