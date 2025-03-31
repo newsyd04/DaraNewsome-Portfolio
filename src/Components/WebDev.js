@@ -21,7 +21,7 @@ const WebDev = () => {
       description:
         "Website for a primary school, showcasing events, announcements, and resources.",
       image: school,
-      link: "https://newsyd04.github.io/scoil-bhreac-chluain-website/",
+      link: "https://www.scoil-bhreac-chluain.daranewso.me/",
     },
     {
       title: "Direct Drywall Website",
