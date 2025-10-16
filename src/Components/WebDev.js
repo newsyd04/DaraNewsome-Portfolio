@@ -17,11 +17,11 @@ const WebDev = () => {
       link: "https://www.webdev.daranewso.me",
     },   
     {
-      title: "School Website",
+      title: "Scoil Bhreac Chluain",
       description:
-        "Website for a primary school, showcasing events, announcements, and resources.",
+        "Website for Scoil Bhreac Chluain primary school, showcasing events, announcements, and resources.",
       image: school,
-      link: "https://www.scoil-bhreac-chluain.daranewso.me/",
+      link: "https://www.scoilbhreacchluain.ie",
     },
     {
       title: "Direct Drywall Website",
@@ -31,9 +31,9 @@ const WebDev = () => {
       link: "https://newsyd04.github.io/direct-drywall-site/",
     },
     {
-      title: "Local Artist Portfolio Website",
+      title: "Abe's Art Studio",
       description:
-        "A website for a local artist, showcasing pieces and providing contact and lesson details.",
+        "Website for a local artist, showcasing pieces and providing contact and lesson details.",
       image: abe,
       link: "https://newsyd04.github.io/abes-art-site/",
     },
@@ -45,14 +45,14 @@ const WebDev = () => {
       link: "https://newsyd04.github.io/sp-trucking-site/",
     },
     {
-      title: "Kerry BER Website",
+      title: "Kerry BER",
       description:
         "A website for Kerry BER, a certified domestic BER assessor business.",
       image: kerryber,
       link: "https://kerryber.ie",
     },
     {
-      title: "Local Photographer Portfolio Website",
+      title: "Secrets of Flowers",
       description:
         "A website for a local photographer, showcasing their favourite pieces and providing contact and sales details.",
       image: sof,
@@ -95,7 +95,7 @@ const WebDev = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                View Project
+                View Website &rarr;
               </a>
             </div>
           ))}

@@ -6,7 +6,10 @@ const Timeline = () => {
       title: "Internship at Irish Department of Justice",
       date: "Jan 2025 - May 2025",
       role: "Software Engineer",
-      description: ["Internship beginning in early 2025."],
+      description: [
+        "Built an AI-powered teaching assistant that speaks and teaches in the style of real lecturers using large language model fine-tuning.",
+        "Created a full-stack web app for the assistant that enabled educational dialogue through combining fine-tuned LLMs with contextual retrieval from lecture slides and online sources.",
+      ],
     },
     {
       title: "Internship at Becton, Dickinson and Company",
