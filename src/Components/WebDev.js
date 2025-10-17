@@ -9,13 +9,13 @@ import webdev from "../images/webdev.png"
 
 const WebDev = () => {
   const projectList = [
-    {
-      title: "My Web Development Portfolio",
-      description:
-        "Showcasing my work in web development, featuring past projects, design services, and contact details.",
-      image: webdev,
-      link: "https://www.webdev.daranewso.me",
-    },   
+    // {
+    //   title: "My Web Development Portfolio",
+    //   description:
+    //     "Showcasing my work in web development, featuring past projects, design services, and contact details.",
+    //   image: webdev,
+    //   link: "https://www.webdev.daranewso.me",
+    // },   
     {
       title: "Scoil Bhreac Chluain",
       description:
@@ -24,25 +24,11 @@ const WebDev = () => {
       link: "https://www.scoilbhreacchluain.ie",
     },
     {
-      title: "Direct Drywall Website",
-      description:
-        "Website designed for Direct Drywall to showcase services and contact info.",
-      image: ddImage,
-      link: "https://newsyd04.github.io/direct-drywall-site/",
-    },
-    {
       title: "Abe's Art Studio",
       description:
-        "Website for a local artist, showcasing pieces and providing contact and lesson details.",
+        "Portfolio site for a local artist, showcasing pieces and providing contact and purchasing details.",
       image: abe,
-      link: "https://newsyd04.github.io/abes-art-site/",
-    },
-    {
-      title: "SP Trucking Website",
-      description:
-        "A website designed to showcase SP Trucking's services and fleet information.",
-      image: trucking,
-      link: "https://newsyd04.github.io/sp-trucking-site/",
+      link: "https://abeboland.art",
     },
     {
       title: "Kerry BER",
@@ -58,6 +44,20 @@ const WebDev = () => {
       image: sof,
       link: "https://www.secrets-of-flowers.daranewso.me/",
     }, 
+    {
+      title: "SP Trucking Website",
+      description:
+        "A website designed to showcase SP Trucking's services and fleet information.",
+      image: trucking,
+      link: "https://newsyd04.github.io/sp-trucking-site/",
+    },
+    {
+      title: "Direct Drywall Website",
+      description:
+        "Website designed for Direct Drywall to showcase services and contact info.",
+      image: ddImage,
+      link: "https://newsyd04.github.io/direct-drywall-site/",
+    },
   ];
 
   return (
