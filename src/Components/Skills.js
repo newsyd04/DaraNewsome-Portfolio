@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
+import useFadeIn from "../hooks/useFadeIn";
 
 const Skills = () => {
+  const [ref, isVisible] = useFadeIn();
   const skillCategories = [
     {
       title: "Programming Languages",
@@ -68,32 +70,31 @@ const Skills = () => {
     "#dbfeef",
   ];
 
-  // Utility function to get a random color
   const getRandomColor = () => colors[Math.floor(Math.random() * colors.length)];
 
   return (
-    <section id="skills" className="py-20 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-4xl font-bold text-gray-800 text-center mb-12">
+    <section id="skills" className="py-20 sm:py-36 bg-white">
+      <div ref={ref} className={`max-w-6xl mx-auto px-5 sm:px-6 fade-in-section ${isVisible ? "is-visible" : ""}`}>
+        <h2 className="text-3xl sm:text-5xl font-semibold tracking-tight text-apple-black text-center">
           Skills
         </h2>
+        <p className="text-sm sm:text-base text-apple-gray text-center mt-3 mb-10 sm:mb-16">Technologies and tools I work with.</p>
         <div className="space-y-12">
           {skillCategories.map((category, index) => (
             <div key={index}>
-              <h3 className="text-lg font-semibold text-gray-700 text-center mb-4">
+              <h3 className="text-sm font-semibold text-apple-black text-center mb-4">
                 {category.title}
               </h3>
-              <div className="flex flex-wrap justify-center gap-4">
+              <div className="flex flex-wrap justify-center gap-3">
                 {category.skills.map((skill, i) => (
                   <span
                     key={i}
-                    className="bg-gray-100 text-gray-700 text-sm font-medium px-4 py-2 rounded-full shadow-sm transition transform"
+                    className="text-xs text-apple-gray bg-apple-light px-4 py-2 rounded-full transition-colors cursor-default"
                     onMouseEnter={(e) => {
-                      const randomColor = getRandomColor();
-                      e.target.style.backgroundColor = randomColor;
+                      e.target.style.backgroundColor = getRandomColor();
                     }}
                     onMouseLeave={(e) => {
-                      e.target.style.backgroundColor = "#f3f4f6"; // Default Tailwind gray
+                      e.target.style.backgroundColor = "#f5f5f7";
                     }}
                   >
                     {skill}

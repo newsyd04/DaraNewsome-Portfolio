@@ -1,65 +1,46 @@
-import React, { useState } from "react";
-import headshotFront from "../images/headshot.png"; // Front image
+import React from "react";
+import headshotFront from "../images/headshot.png";
+import useFadeIn from "../hooks/useFadeIn";
 
 const Hero = () => {
-  const [isFlipped, setIsFlipped] = useState(false);
-
-  const handleSpin = () => {
-    setIsFlipped(!isFlipped);
-  };
-
-  const scrollToAnchor = () => {
-    const target = document.getElementById("experience");
-    if (target) {
-      const targetPosition =
-        target.getBoundingClientRect().top + window.pageYOffset;
-      window.scrollTo({
-        top: targetPosition,
-        behavior: "smooth",
-      });
-    }
-  };
+  const [ref, isVisible] = useFadeIn(0.1);
 
   return (
     <section
       id="home"
-      className="h-screen mt-7 flex flex-col justify-center items-center text-center bg-white"
+      className="min-h-screen flex flex-col justify-center items-center text-center bg-white px-8"
     >
-      {/* Image Container */}
-      <div
-        className="relative w-48 h-48"
-        style={{ perspective: "1000px" }} // Enables 3D perspective
-        onClick={handleSpin} // Click event for flipping
-      >
-        <div
-          className={`relative w-full h-full rounded-full shadow-lg transition-transform duration-700 transform`}
-        >
-          {/* Front Side */}
+      <div ref={ref} className={`fade-in-section ${isVisible ? "is-visible" : ""}`}>
+        <div className="w-40 h-40 sm:w-48 sm:h-48 mb-8 mx-auto">
           <img
             src={headshotFront}
-            alt="Front Headshot"
-            className="absolute w-full h-full object-cover rounded-full"
+            alt="Dara Newsome headshot"
+            className="w-full h-full object-cover rounded-full"
           />
         </div>
-      </div>
 
-      {/* Text Content */}
-      <h1 className="text-5xl font-bold text-gray-800 mt-5">Hi, I'm Dara</h1>
-      <p className="text-xl text-gray-600 mt-4">
-        Immersive Software Engineering Student
-      </p>
-      <button
-        onClick={scrollToAnchor}
-        className="mt-6 bg-blue-500 text-white py-2 px-6 rounded-full shadow-md hover:bg-blue-600"
-      >
-        View My Work
-      </button>
-      <a
-        href="/Dara_Newsome_resume.pdf"
-        className="mt-6 bg-blue-500 text-white py-2 px-6 rounded-full shadow-md hover:bg-blue-600" download
-      >
-        Download my Resume
-      </a>
+        <h1 className="text-4xl sm:text-6xl md:text-7xl font-semibold tracking-tight text-apple-black">
+          Hi, I'm Dara
+        </h1>
+        <p className="text-lg sm:text-xl text-apple-gray mt-4 font-light">
+          Immersive Software Engineering Student
+        </p>
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-10 w-full sm:w-auto px-4 sm:px-0 justify-center">
+          <a
+            href="#experience"
+            className="bg-blue-500 text-white text-base sm:text-sm py-3.5 sm:py-3 px-8 rounded-full hover:bg-blue-600 transition-colors text-center"
+          >
+            View My Work
+          </a>
+          <a
+            href="/Dara_Newsome_resume.pdf"
+            className="border border-blue-500 text-blue-500 text-base sm:text-sm py-3.5 sm:py-3 px-8 rounded-full hover:bg-blue-500 hover:text-white transition-colors text-center"
+            download
+          >
+            Download Resume
+          </a>
+        </div>
+      </div>
     </section>
   );
 };

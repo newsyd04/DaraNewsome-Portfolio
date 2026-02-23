@@ -1,6 +1,8 @@
 import React from "react";
+import useFadeIn from "../hooks/useFadeIn";
 
-const Timeline = () => {
+const Experience = () => {
+  const [ref, isVisible] = useFadeIn();
   const experiences = [
     {
       title: "Internship at Irish Department of Justice",
@@ -78,17 +80,16 @@ const Timeline = () => {
   const mostRecentExperience = experiences[0];
 
   return (
-    <section id="experience" className="bg-gray-50 py-20">
-      <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-4xl font-bold text-gray-900 text-center mb-12">
+    <section id="experience" className="py-20 sm:py-36 bg-apple-light dot-bg">
+      <div ref={ref} className={`max-w-6xl mx-auto px-5 sm:px-6 fade-in-section ${isVisible ? "is-visible" : ""}`}>
+        <h2 className="text-3xl sm:text-5xl font-semibold tracking-tight text-apple-black text-center">
           Work Experience
         </h2>
+        <p className="text-sm sm:text-base text-apple-gray text-center mt-3 mb-10 sm:mb-16">Where I've contributed so far.</p>
         <div className="relative">
-          {/* Vertical Line */}
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 h-full border-l-2 border-gray-300 lg:top-4"></div>
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 h-full w-px bg-gray-200 lg:top-4"></div>
 
-          {/* Timeline Items */}
-          <div className="space-y-10">
+          <div className="space-y-12">
             {experiences.map((exp, index) => (
               <div
                 key={index}
@@ -96,19 +97,17 @@ const Timeline = () => {
                   index % 2 === 0 ? "lg:flex-row-reverse" : "lg:flex-row"
                 }`}
               >
-                {/* Timeline Marker */}
                 <div
                   className={`absolute left-1/2 transform -translate-x-1/2 rounded-full ${
                     exp === mostRecentExperience
-                      ? "bg-blue-500 flex items-center justify-center w-6 h-6 lg:w-10 lg:h-10"
-                      : "bg-gray-300 w-4 h-4"
+                      ? "bg-blue-500 flex items-center justify-center w-5 h-5 lg:w-7 lg:h-7"
+                      : "bg-gray-300 w-3 h-3"
                   }`}
                 >
-                  {/* Blue Arrow for Most Recent */}
                   {exp === mostRecentExperience && (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-3 w-3 lg:h-5 lg:w-5 text-white"
+                      className="h-3 w-3 lg:h-4 lg:w-4 text-white"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -123,18 +122,17 @@ const Timeline = () => {
                   )}
                 </div>
 
-                {/* Experience Card */}
                 <div
-                  className={`w-full max-w-lg p-6 rounded-lg shadow-lg bg-white ${
+                  className={`w-full max-w-lg p-5 sm:p-6 rounded-2xl bg-white border border-gray-100 ${
                     index % 2 === 0 ? "lg:ml-10" : "text-left lg:mr-10"
                   }`}
                 >
-                  <h3 className="text-2xl font-semibold text-gray-800">
+                  <h3 className="text-lg font-semibold text-apple-black">
                     {exp.title}
                   </h3>
-                  <p className="text-sm text-gray-500 mt-1">{exp.role}</p>
-                  <p className="text-sm text-gray-500 mt-1">{exp.date}</p>
-                  <ul className="text-gray-700 mt-4 list-disc pl-5">
+                  <p className="text-sm text-blue-500 mt-1">{exp.role}</p>
+                  <p className="text-xs text-apple-gray mt-1">{exp.date}</p>
+                  <ul className="text-sm text-apple-gray mt-4 space-y-2 list-disc pl-5">
                     {exp.description.map((point, i) => (
                       <li key={i}>{point}</li>
                     ))}
@@ -149,4 +147,4 @@ const Timeline = () => {
   );
 };
 
-export default Timeline;
+export default Experience;

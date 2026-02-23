@@ -1,16 +1,16 @@
 import React from "react";
-import Navbar from "./Components/NavBar";
-import Hero from "./Components/Hero";
-import Projects from "./Components/Projects";
-import Skills from "./Components/Skills";
-import WebDev from "./Components/WebDev";
-import Contact from "./Components/Contact";
-import Footer from "./Components/Footer";
-import Experience from "./Components/Experience";
+import Navbar from "./components/NavBar";
+import Hero from "./components/Hero";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
+import WebDev from "./components/WebDev";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import Experience from "./components/Experience";
 
 function App() {
   return (
-    <div className="font-sans antialiased text-gray-800 bg-gray-100">
+    <div className="font-sans antialiased text-apple-black bg-apple-light">
       <Navbar />
       <Hero />
       <Experience />

@@ -1,16 +1,18 @@
 import React from "react";
+import useFadeIn from "../hooks/useFadeIn";
 
 const TechTag = ({ name, color, logo }) => (
   <span
-    className="flex items-center gap-2 text-sm font-medium px-3 py-1 rounded-full shadow-sm transform transition-all hover:scale-105 hover:shadow-lg"
+    className="flex items-center gap-1.5 text-xs font-medium px-3 py-1 rounded-full"
     style={{ backgroundColor: color, color: "white" }}
   >
-    <img src={logo} alt={name} className="w-4 h-4" />
+    <img src={logo} alt={name} className="w-3.5 h-3.5" />
     {name}
   </span>
 );
 
 const Projects = () => {
+  const [ref, isVisible] = useFadeIn();
   const technologies = {
     Java: {
       color: "#D3BC8D",
@@ -26,7 +28,7 @@ const Projects = () => {
     },
     "React Leaf":{
       color: "#663399",
-      logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.tiagofsanchez.com%2Fstatic%2F4ea17284d0f93219dd9797c24bfebaff%2F53f65%2Freact-leaflet.png&f=1&nofb=1&ipt=684aab5fb9ef669a34654396fe0f65e50e9ba649a43c1f698f6d56cca0244f91&ipo=images",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Leaflet_logo.svg/320px-Leaflet_logo.svg.png",
     },
     "Tailwind CSS": {
       color: "#385ef8",
@@ -124,20 +126,20 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-gray-100">
-      <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl font-bold text-gray-800 text-center mb-12">
+    <section id="projects" className="py-20 sm:py-36 bg-white">
+      <div ref={ref} className={`max-w-6xl mx-auto px-5 sm:px-6 fade-in-section ${isVisible ? "is-visible" : ""}`}>
+        <h2 className="text-3xl sm:text-5xl font-semibold tracking-tight text-apple-black text-center">
           Personal Projects
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <p className="text-sm sm:text-base text-apple-gray text-center mt-3 mb-10 sm:mb-16">Things I've built in my own time.</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-6">
           {projectList.map((project, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
-              style={{ minHeight: "280px" }}
+              className="bg-apple-light p-6 rounded-2xl border border-gray-100 flex flex-col items-center text-center transition-colors duration-200 hover:border-gray-200"
             >
               <div>
-                <h3 className="text-xl font-semibold text-gray-800">
+                <h3 className="text-lg font-semibold text-apple-black">
                   {project.title}
                 </h3>
                 <div className="flex flex-wrap gap-2 mt-4 justify-center">
@@ -150,13 +152,15 @@ const Projects = () => {
                     />
                   ))}
                 </div>
-                <p className="mt-4 text-gray-600">{project.description}</p>
+                <p className="mt-4 text-sm text-apple-gray">{project.description}</p>
               </div>
               <a
                 href={project.link}
-                className="text-blue-500 hover:text-blue-600 mt-auto"
+                className="text-blue-500 hover:text-blue-600 text-sm font-medium mt-auto pt-4"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                View Project
+                View Project &rarr;
               </a>
             </div>
           ))}
