@@ -77,10 +77,21 @@ const Projects = () => {
     "3D Printing": {
       color: "#9122ff",
       logo: "https://upload.wikimedia.org/wikipedia/commons/9/9b/Logo_for_Cura_Software.png"
-    }
+    },
+    Flutter: {
+      color: "#02569B",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png",
+    },
   };
 
   const projectList = [
+    {
+      title: "Countdowns",
+      description:
+        "Apple-style countdown app for tracking life's moments, built with Flutter for iOS, Android, and web.",
+      tech: ["Flutter"],
+      link: "https://github.com/newsyd04/countdowns",
+    },
     {
       title: "Goblin Clothing",
       description:
