@@ -5,7 +5,7 @@ import school from "../images/school-site.png";
 import abe from "../images/abe-picture.png";
 import sof from "../images/sof-pic.png";
 import mindseye from "../images/mindseye.png";
-import scoilMhaolcheadair from "../images/scoil-mhaolcheadair.gif";
+import scoilMhaolcheadair from "../images/scoil-mhaolcheadair.png";
 
 
 const WebDev = () => {
@@ -104,7 +104,7 @@ const WebDev = () => {
             Looking to commission a website for your business?
           </p>
           <a
-            href="https://webdev-portfolio-rho.vercel.app"
+            href="https://www.webdev.daranewso.me/"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-3 inline-flex items-center gap-2 text-blue-500 hover:text-blue-600 text-sm sm:text-base font-semibold"
