@@ -97,6 +97,22 @@ const WebDev = () => {
             </div>
           ))}
         </div>
+
+        {/* Freelance CTA — points clients at the dedicated services site */}
+        <div className="mt-10 sm:mt-14 text-center">
+          <p className="text-sm sm:text-base text-apple-gray">
+            Looking to commission a website for your business?
+          </p>
+          <a
+            href="https://webdev-portfolio-rho.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 inline-flex items-center gap-2 text-blue-500 hover:text-blue-600 text-sm sm:text-base font-semibold"
+          >
+            See services, samples &amp; pricing
+            <span aria-hidden>&rarr;</span>
+          </a>
+        </div>
       </div>
     </section>
   );
