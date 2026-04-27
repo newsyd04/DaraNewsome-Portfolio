@@ -173,7 +173,7 @@ const Projects = () => {
         {/* GitHub CTA — points at the full project list */}
         <div className="mt-10 sm:mt-14 text-center">
           <p className="text-sm sm:text-base text-apple-gray">
-            Looking for more? Everything I tinker with lives on GitHub.
+            Looking for more?
           </p>
           <a
             href="https://github.com/newsyd04"
