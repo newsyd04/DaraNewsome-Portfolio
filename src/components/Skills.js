@@ -22,7 +22,9 @@ const Skills = () => {
       title: "Web Development",
       skills: [
         "React",
+        "Ember.js",
         "Vue JS",
+        "Ruby on Rails",
         "HTML",
         "CSS",
         "JavaScript",
