@@ -7,7 +7,7 @@ const Experience = () => {
     {
       title: "Internship at Intercom",
       date: "Jan 2026 - May 2026",
-      role: "Software Engineer",
+      role: "Product Engineer",
       description: [
         "Designed and shipped metadata-driven importers for external knowledge sources (Confluence, Zendesk, Notion), syncing structured fields like labels, timestamps, and authors into Intercom with support for advanced filtering and AI destinations (Fin, Copilot).",
         "Defined and implemented Confluence prefiltering rules end-to-end: from backend strategies (label fetching, caching, preview performance) to UI behavior and a detailed QA plan covering rule types, operators, and edge cases.",
