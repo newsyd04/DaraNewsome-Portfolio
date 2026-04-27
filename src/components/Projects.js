@@ -127,13 +127,6 @@ const Projects = () => {
       tech: ["React", "React Leaf", "Tailwind CSS"],
       link: "https://newsyd04.github.io/Travel-Map",
     },
-    {
-      title: "Pizza Ranker",
-      description:
-        "Website to rank and review my favourite Pizza restaurants",
-      tech: ["React", "Tailwind CSS", "Figma"],
-      link: "https://newsyd04.github.io/pizza-ranker/",
-    },
   ];
 
   return (
@@ -175,6 +168,22 @@ const Projects = () => {
               </a>
             </div>
           ))}
+        </div>
+
+        {/* GitHub CTA — points at the full project list */}
+        <div className="mt-10 sm:mt-14 text-center">
+          <p className="text-sm sm:text-base text-apple-gray">
+            Looking for more? Everything I tinker with lives on GitHub.
+          </p>
+          <a
+            href="https://github.com/newsyd04"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 inline-flex items-center gap-2 text-blue-500 hover:text-blue-600 text-sm sm:text-base font-semibold"
+          >
+            See all projects on GitHub
+            <span aria-hidden>&rarr;</span>
+          </a>
         </div>
       </div>
     </section>
