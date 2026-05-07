@@ -107,11 +107,11 @@ const Projects = () => {
       link: "https://immersivesoftwareengineering.ie/ise-gen-ai-4-good/",
     },
     {
-      title: "Synergia",
+      title: "Application Tracker",
       description:
-        "Motion-sensing device showing ideal heating times based on tracked activity patterns.",
-      tech: ["AWS", "Arduino", "Grafana", "3D Printing"],
-      link: "https://newsyd04.github.io/EpicProject",
+        "Responsive Kanban for tracking job applications. Drag-drop on desktop, tabbed columns on mobile, GitHub-backed sync via Vercel serverless functions.",
+      tech: ["React", "TypeScript", "Tailwind CSS", "Vercel", "GitHub API"],
+      link: "https://github.com/newsyd04/Potench-Jobs-",
     },
     {
       title: "Domain Price Comparator",
