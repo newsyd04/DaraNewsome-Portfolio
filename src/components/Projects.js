@@ -123,7 +123,7 @@ const Projects = () => {
       description:
         "Responsive Kanban where every save is a git commit, backed by Vercel serverless functions writing to GitHub.",
       tech: ["React", "TypeScript", "Tailwind CSS", "Vercel", "GitHub"],
-      link: "https://github.com/newsyd04/Potench-Jobs-",
+      link: "https://github.com/newsyd04/application-tracker",
     },
     {
       title: "Domain Price Comparator",
