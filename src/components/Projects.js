@@ -22,6 +22,18 @@ const Projects = () => {
       color: "#6F263D",
       logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/640px-Unofficial_JavaScript_logo_2.svg.png",
     },
+    TypeScript: {
+      color: "#3178C6",
+      logo: "https://cdn.simpleicons.org/typescript/white",
+    },
+    Vercel: {
+      color: "#000000",
+      logo: "https://cdn.simpleicons.org/vercel/white",
+    },
+    GitHub: {
+      color: "#181717",
+      logo: "https://cdn.simpleicons.org/github/white",
+    },
     React: {
       color: "#20232A",
       logo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
@@ -110,7 +122,7 @@ const Projects = () => {
       title: "Application Tracker",
       description:
         "Kanban app where every save is a git commit. Responsive desktop drag-drop + mobile tabs. Vercel serverless functions write to a dedicated data branch in this repo via the GitHub API.",
-      tech: ["React", "TypeScript", "Tailwind CSS", "Vercel", "GitHub API"],
+      tech: ["React", "TypeScript", "Tailwind CSS", "Vercel", "GitHub"],
       link: "https://github.com/newsyd04/Potench-Jobs-",
     },
     {
