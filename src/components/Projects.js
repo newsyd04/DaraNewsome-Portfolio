@@ -109,7 +109,7 @@ const Projects = () => {
     {
       title: "Application Tracker",
       description:
-        "Responsive Kanban for tracking job applications. Drag-drop on desktop, tabbed columns on mobile, GitHub-backed sync via Vercel serverless functions.",
+        "Kanban app where every save is a git commit. Responsive desktop drag-drop + mobile tabs. Vercel serverless functions write to a dedicated data branch in this repo via the GitHub API.",
       tech: ["React", "TypeScript", "Tailwind CSS", "Vercel", "GitHub API"],
       link: "https://github.com/newsyd04/Potench-Jobs-",
     },
