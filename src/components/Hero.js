@@ -33,7 +33,7 @@ const Hero = () => {
             View My Work
           </a>
           <a
-            href="/Dara_Newsome_resume.pdf"
+            href="/Dara_Newsome_Resume.pdf"
             className="border border-blue-500 text-blue-500 text-base sm:text-sm py-3.5 sm:py-3 px-8 rounded-full hover:bg-blue-500 hover:text-white transition-colors text-center"
             download
           >
